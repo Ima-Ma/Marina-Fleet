@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <title>Marina Fleet</title>
+  <link rel="shortcut icon" href="MAIN ICON.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+  <style>
+    body{
+      background-color:rgb(0, 0, 22) ;
+
+    }
+    .pur-box h2{
+      color:rgb(253, 204, 68)   ;
+      position: absolute;
+      text-shadow: 2px 2px 2px black;
+      margin-top: -200px;
+      margin-left: 40px;
+    }
+    hr{
+      margin-left: 140px;
+      color:rgb(253, 204, 68)  ;
+    }
+    .pur-box {
+      color: white;
+      margin: 50px;
+      margin-top: 2px;
+      position: relative;
+      width: 320px;
+    }
+    .pur-box:hover{
+      opacity: 0.55;
+      cursor: pointer;
+
+    }
+    .pur-box img{
+      margin-top: 5px;
+      width: 200px;
+      height: 200px;
+    }
+    .img-p-fluid{
+      width: 300px;
+      margin-left: 240px;
+    }
+    .img-p-fluid:hover{
+      opacity: 0.55;
+      cursor: pointer;
+    }
+    .about{
+      overflow: hidden;
+    }
+   .pur-cards img{
+    width: 500px;
+    height: 400px;
+    margin-top: -400px;
+    opacity: 0.67;
+    margin-bottom: 200px;
+   }
+   .inspiration{
+    margin: 30px;
+    margin-top: -500px;
+   }
+   .inspiration img{
+    height: 400px;
+    opacity: 0.95;
+    margin-bottom: 20px;
+    position: relative;
+
+    width: 400px;
+   }
+   .inspiration img:hover{
+    opacity: 0.55;
+    cursor: pointer;
+   }
+   .inspiration h2{
+    color: rgb(235, 180, 28);
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    margin-left: 50px;
+    font-size: 42px;
+    margin-top: -400px;
+   }
+   .inspiration h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -350px;
+    font-size: 24px;
+   }
+   #alert-btn:hover{
+    background-color: rgba(6, 6, 26, 0.623);
+    color: white;
+    cursor: pointer;
+   }
+   #alert-btn{
+    padding: 6px;
+    position: absolute;
+    font-size: 20px;
+    background-color:rgba(235, 180, 28, 0.788)  ;
+    color: black;
+    width: 100px;
+    margin-top: 130px;
+    margin-left: -350px;
+    border: none;
+   }
+  </style>
+</head>
+
+<body style="background-color: rgb(0, 0, 22) ;overflow-x: hidden;">
+  <div class="starter">
+    <section class="showcase">
+      <header>
+        <div class="toggle"></div>
+      </header>
+      <video  style="filter: blur(3px);" src="MAIN-BG.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <header>
+          <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <button id="btn"><img src="pin.png" alt="" height="90px" width="40px"></button>
+              <!-- <button id="button">Enquire</button> -->
+             <div class="topnav" id="myTopnav">
+              <img id="logo" src="MF.png" alt="" width="150px" height="150px">
+              <a href="about.html"> About</a>
+              <a class="active"  href="purchase.html">Purchase</a>
+              <a  href="destinations.html">Destinations</a>
+              <a href="charter.html">Charter</a>
+              <a href="home.html"> Home </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    <img id="main-tag" style="float: right;margin-right: 50px;" src="purchase-heading.png" alt="" width="50%" height="50%"> 
+
+      </div>
+  </div>
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <h1 style="color: white ; text-align: center;font-weight: 500; font-size: 82px;">Yacht Purchase with Marina Fleet</h1>
+    <hr class="w-50 mx-auto">
+    <div class="container">
+      <div class="row">
+      <div class="about-2" style="position: relative;
+      top: 80px;">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <img src="./catamaran.jpg"
+                      alt="" style="width: 100%;
+                      position: relative;
+                      left: 550px;">
+              </div>
+      <div class="col-lg-6" style="position: relative; right: 550px;">
+        <h3 class="display-3 fw-bold text-center" style="color:rgb(255, 196, 35) ;">The Superyacht Lifestyle. Done Your Way.</h3>
+        <p class="text-center" style=" font-size: 24px;color: white;">We’d never see a yacht as simply an asset. It’s a source of joy. A memory maker. An escapade creator. With the potential to make your life truly awesome. That’s why, when searching for the perfect superyacht for sale, we always look beyond amenities and aesthetics and try to find something special beneath the surface. Something that will not only suit your individual lifestyle, but positively transform it, too.</p>
+        <div class="text-center">
+        <!-- <button id="btn" class="btn btn-secondary">Check it out!</button> -->
+    </div>
+    </div>
+  </div>
+      <!-- ABOUT END -->
+
+      <!-- START FORM -->
+      <div class="forms">
+        <fieldset>
+          <legend style=" font-size: 45px; color: rgb(255, 196, 35) ; font-weight: 700; ">Enquire:</legend>
+                  
+          <form class="row g-3" style="color: white;">
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Condition</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="Condition">Condition</option>
+                <option>All</option>
+                <option>NEW</option>
+                <option>USED</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Yachts Type</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="Yatch Type">Yatch types</option>
+                <option>Motor Yatch</option>
+                <option>Sail Yatch</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Year To</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="Year To">Year To</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" value="First name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Size</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="Size">Size</option>
+                <option>0m</option>
+                <option>1m</option>
+                <option>2m</option>
+                <option>3m</option>
+                <option>4m</option>
+                <option>5m</option>
+                <option>6m</option>
+                <option>7m</option>
+                <option>8m</option>
+                <option>9m</option>
+                <option>10m</option>
+                <option>11m</option>
+                <option>12m</option>
+                <option>13m</option>
+                <option>14m</option>
+                <option>15m</option>
+                <option>16m</option>
+                <option>17m</option>
+                <option>18m</option>
+                <option>19m</option>
+                <option>20m</option>
+                <option>21m</option>
+                <option>22m</option>
+                <option>23m</option>
+                <option>24m</option>
+                <option>25m</option>
+                <option>26m</option>
+                <option>27m</option>
+                <option>28m</option>
+                <option>29m</option>
+                <option>30m</option>
+                <option>31m</option>
+                <option>32m</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Offical Currency</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="Offical Currency">Offical Currency</option>
+                <option>DOLLAR($)</option>
+                <option>EURO(€)</option>
+                <option>POUND(£)</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+               style="
+               width: 500px;
+               padding: 10px;
+               background-color:rgb(255, 196, 35) ;
+               color: rgb(0, 0, 22);
+               font-size: 20px;
+               font-weight: 800;
+               " 
+               type="submit">Submit form</button>
+            </div>
+          </form>
+        </fieldset><br><br><br>
+        <div class="card-content" style="
+       position: relative;
+        right: 80px;">
+        <h1 style="color: rgb(255, 196, 35)  ; margin-left: 200px;" class="display-3 text-center fw-bold">Yachts for Sale</h1>
+        <hr style="width: 40%; height: 2px; font-weight: bold; margin-left: 420px;">
+        <h4 style="color: white; margin-left: 200px;">Access to the global fleet of yachts and support from the most experienced yacht specialists; marina fleet Clients have access to the best yachting has to offer.</h4>
+          <section class="text-center mt-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="ahpo.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>MOONLIGHT</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   10M(90ft)</p>
+                    <p>Guests    12  IN 7 Cabins</p>
+                    <p>build  2007/2019</p>
+                    <p>Price   $59,000,000</p>
+                  </div>
+                </div>
+                <!-- END Picture -->
+                <!-- 2nd pic -->
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="silver tip.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>SILVER EDGE</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   10M(90ft)</p>
+                    <p>Guests    6  IN 2 Cabins</p>
+                    <p>build  2007</p>
+                    <p>Price   $23,000,000</p>
+                  </div>
+                </div>
+                <!-- END Picture -->
+                <!-- 3rd pic -->
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="cygnus gm26  fishing.jpg" alt="">
+                    <h2 id="card-h">Marina Fleet</h2>
+                    <h4>YARSIN</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   13M(10ft)</p>
+                    <p>Guests    22  IN 12 Cabins</p>
+                    <p>build  2020</p>
+                    <p>Price   $90,000,000</p>
+                  </div>
+                </div>
+                <!-- END  Picture-->
+                <!-- 4th pic -->
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="black pearl.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>LADY-E</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   13M(120ft)</p>
+                    <p>Guests    32  IN 17 Cabins</p>
+                    <p>build  2019</p>
+                    <p>Price   $60,000,000</p>
+                  </div>
+                </div>
+                <!-- END Picture -->
+                <!-- 5th Pic -->
+               
+                <!-- END Picture -->
+                <!-- 6th pic -->
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="red-sky sailing.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>PLANET-NINE</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   6M(20ft)</p>
+                    <p>Guests   34  IN 2 Cabins</p>
+                    <p>build  2013</p>
+                    <p>Price   $43,000,000</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="red bay fishing.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>FORCE BLUE</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length  4M(32ft)</p>
+                    <p>Guests    22  IN 14 Cabins</p>
+                    <p>build  2017</p>
+                    <p>Price   $60,000,000</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="sea hawk.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>ICE</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   16M(70ft)</p>
+                    <p>Guests    4  IN 2 Cabins</p>
+                    <p>build  2002</p>
+                    <p>Price   $23,000,000</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="sea eagle.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>MARIA</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   13M(50ft)</p>
+                    <p>Guests    34  IN 37 Cabins</p>
+                    <p>build  2019</p>
+                    <p>Price   $59,000,000</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="faith yacht.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>ALFA</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   10M(90ft)</p>
+                    <p>Guests    16  IN 7 Cabins</p>
+                    <p>build  2004/2019</p>
+                    <p>Price   $70,000,000</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="rox star.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>NEW STAR</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   10M(90ft)</p>
+                    <p>Guests     7 Cabins</p>
+                    <p>build  2014</p>
+                    <p>Price   $40,000,000</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="dream.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>FORT</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   10M(90ft)</p>
+                    <p>Guests    11  IN 7 Cabins</p>
+                    <p>build  2007</p>
+                    <p>Price   $39,000,0</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                  <div class="pur-box">
+                    <img src="aquarius.jpg" alt="">
+                    <h2>Marina Fleet</h2>
+                    <h4>FX-NEW</h4>
+                    <hr style="width: 10%; height: 3px;">
+                    <p>Length   10M(90ft)</p>
+                    <p>Guests    3 IN 1 Cabins</p>
+                    <p>build  2019</p>
+                    <p>Price   $82,000,000</p>
+                  </div>
+                </div>
+              
+                <!-- END Picture -->
+              </div>
+            </div>
+          </section>
+        </div>
+<!-- End of .container -->
+     
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <div class="content">
+            <div class="contact-wrap">
+                <div class="contact-in">
+                    <h1>Contact-info</h1>
+                    <h2><i class="fa-solid fa-phone"></i>Phone</h2>
+                    <p>92+3212933678</p>
+                    <h2><i class="fa-solid fa-envelope"></i>E-mail</h2>
+                    <p>Imamamushtaq5@gmail.com</p>
+                    <h2><i class="fa-solid fa-location-dot"></i>Addres</h2>
+                    <p>Karachi, Pakistan</p>
+                    <ul>
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                     <i class="fa-brands fa-google"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                    </ul>
+                </div>
+                <div class="contact-in">
+                    <h1>send a Message</h1>
+                    <form action="" onsubmit="return validation()">
+                        <input type="text" placeholder="Full-Name" class="contact-in-input" name="fullname" id="fullname">
+                        <span id="fullnameerror" class="text-danger fw-bold"></span>
+                        <input type="email" placeholder="E-mail" class="contact-in-input" name="email" id="email">
+                        <span id="emailerror" class="text-danger fw-bold"></span>
+                        <input type="password" placeholder="Country" class="contact-in-input" name="password" id="password">
+                        <!-- <input type="password" placeholder="Password" class="contact-in-input" name="Password" id="Password"> -->
+                        <span id="passworderror" class="text-danger fw-bold"></span>
+                        <textarea placeholder="Message" class="contact-in-textarea" name="Message" id="message"></textarea>
+                        <span id="messageerror" class="text-danger fw-bold"></span>
+                        <input type="submit" value="submit" class="contact-in-btn">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        
+        </div>
+      
+      </div>
+    </div>
+  </div>
+      </div>
+      <!-- End of .container -->
+     
+        <!-- Footer -->
+      </div>
+    </div>
+    <div class="purchase-inspiration">
+      <img style="
+      height: 700px;
+        width: 100%;
+        opacity: 0.75;
+        filter: blur(5px);
+        margin-top: 200px;
+        position: relative;
+        " 
+        src="water splash gif.gif" alt="">
+        <h1 class="text-center fw-bold display-1" 
+        style="color:rgb(255, 196, 35) ;
+         margin-top: -600px;
+         margin-bottom: 600px;
+         position: relative;
+        ">Packages</h1>
+        <hr
+        style="color:rgb(255, 196, 35) ;
+         width: 40%; 
+         text-align: center;
+         margin-left: 450px;
+         height: 2px;
+         margin-top: -580px;
+         margin-bottom: 600px;
+         "
+         class=" fw-bold">
+        <h4
+         style="
+         margin-top: -600px;
+         margin-bottom: 600px;
+         position: relative;
+         color: white;
+         text-align: center;
+
+         "
+         >Our team of experts have access thousands of yachts, both on and off-market . Dont know where to start search ? here some inspiration
+        </h4>
+        <div class="inspiration">
+          <div class="row">
+            <div class="col-lg-4">
+              <img style="opacity: 1;" src="https://thecobbleshop.co.uk/wp-content/uploads/2023/03/special-offers-22.png" alt="">
+            </div>
+            <div class="col-lg-4">
+              <img src="SHIPS/ship 3.jpg" alt="">
+              <h2>$1600 Per/1day</h2>
+              <h1>Yacht Express</h1>
+              <button id="alert-btn" onclick ="myAlert()">Explore</button>
+            </div>
+            <div class="col-lg-4">
+              <img src="SHIPS/ship 2.jpg" alt="">
+              <h2>$1800 Per/1day</h2>
+              <h1>Moonlight</h1>
+              <button id="alert-btn" onclick ="myAlert()">Explore</button>
+
+            </div>
+            <div class="col-lg-4">
+              <img src="SHIPS/ship 1.jpg" alt="">
+              <h2>$1350 Per/1day</h2>
+              <h1>Megalodon</h1>
+              <button id="alert-btn" onclick ="myAlert()">Explore</button>
+
+            </div>
+            <div class="col-lg-4">
+              <img src="SHIPS/ship 5.jpg" alt="">
+              <h2>$2000 Per/1day</h2>
+              <h1>Aquamarine</h1>
+              <button id="alert-btn" onclick ="myAlert()">Explore</button>
+
+            </div>
+            <div class="col-lg-4">
+              <img src="SHIPS/ship 4.jpg" alt="">
+              <h2>$1500 Per/1day</h2>
+              <h1>Shark Bait</h1>
+              <button id="alert-btn" onclick ="myAlert()">Explore</button>
+
+
+            </div>
+          </div>
+        </div>
+      
+                     <!-- Load an icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- side bar -->
+ <div class="sidebar">
+  <a href="home.html"><img src="white wheel.png" alt="" height="45px" width="45px"> </a>
+  <a  onclick="openNav()" href="#"><img src="contact.png" alt="" height="40px" width="40px"> </a>
+  <a href="https://www.google.com/maps/@24.9406726,67.0418153,14z?entry=ttu" target="_blank"><img src="location.png" alt="" height="40px" width="40px"> </a>
+</div>
+<!-- sidebar end -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    </div>
+    </section>
+    <!-- <div class="mt--5"></div> -->
+    <footer
+          class="text-center text-lg-start text-dark"
+          style="background-color: rgba(6, 6, 26, 0);"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: rgba(255, 196, 35, 0.836) "
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 style="font-size: 22px; color: white;" class="text-uppercase fw-bold">Marina Fleet</h6>
+            <img style="margin-top: -10px; margin-left: -15px;" src="white wheel.png" alt="" width="200px" height="200px">
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="font-size: 22px;color: white;"  class="text-uppercase fw-bold">Useful links</h6>
+            <p>
+              <a href="charter.html" class="text-dark">Charter</a>
+            </p>
+            
+            <p>
+              <a href="destinations.html" class="text-dark">Destinations</a>
+            </p>
+            <p>
+              <a href="purchase.html" class="text-dark">Purchase</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6  style="font-size: 22px;color: white;" class="text-uppercase fw-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Karachi, Pakistan</p>
+            <p><i class="fas fa-envelope mr-3"></i> imamamushtaq5@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +92-3112033680</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: white"
+         >
+    All Rights Reserved! 2023 Copyright  © 
+    
+        
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    function myAlert() {
+    Swal.fire({
+  title: 'Please Submit the enquire form!',
+  icon: 'error',
+  confirmButtonText: 'OK'
+})}
+    </script>
+      <script>
+      
+        function pin(){
+          Swal.fire({
+  title: 'Image has been pined✅',
+  confirmButtonText: 'OK'
+})
+           }
+         </script>
+    <script src="home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Marina Fleet</title>
+    <link rel="shortcut icon" href="MAIN ICON.png" type="image/x-icon">
+    <style>
+      #about-wheel{
+        height: 38%;
+        width: 38%;
+        margin-left: 800px;
+        animation: wheel 0.5s ease-in-out;
+      }
+      @keyframes wheel {
+        from{
+          margin-left: 100px;
+
+        }
+        to{
+          margin-right: 400px;
+        
+
+        }
+      }
+      
+      #about-marina{
+        height: 40%;
+        width: 40%;
+        margin-top:-600px;
+        margin-left:300px;
+        /* animation: wheel 6s ease-in-out; */
+
+      }
+      .about{
+        margin-top: -200px;
+      }
+      .about-para{
+        margin-top: -350px;
+        font-size: 20px;
+        margin-left: 400px;
+        text-align: left;
+      }
+      .team{
+        margin-top: 200px;
+      }
+      .box-1{
+        margin-top: 60px;
+      }
+      .box-1 img{
+        /* margin-left: 200px; */
+        display: inline block;
+        margin: 10px;
+      
+      }
+      #team{
+        margin-left: 100px;
+        /* margin-top: px; */
+      }
+      .box-1 h4
+      {
+        margin-left: 100px;
+        margin-top: -60px;
+
+      }
+      .box-1 h6{
+        margin-left: 100px;
+        /* margin-top: -10px; */
+      }
+      iframe{
+        margin-top: 60px;
+      }
+      .main-about{
+        margin-top: -500px;
+      }
+      .pdf{
+        margin-top: 50px;
+      }
+      
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 22) ;">
+    <div class="starter">
+    <section class="showcase" >
+        <header>
+            <div class="toggle"></div>
+        </header> 
+    <video style="filter: blur(5px); " id="vi2nd" src="MAIN-BG.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <header>
+<button id="btn"><img src="pin.png" alt="" height="90px" width="40px"></button>
+<div class="topnav" id="myTopnav">
+    <img id="logo" src="MF.png" alt="" width="150px" height="150px">
+    <a  class="active"   href="about.html"> About</a>
+    <a href="purchase.html">Purchase</a>
+    <a  href="destinations.html">Destinations</a>
+    <a href="charter.html">Charter</a>
+    <a href="home.html"> Home </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="about">
+  <img id="about-wheel" src="YELLOW WHEEL for about.png" alt="">
+  <img style=" margin-top: -600px; margin-left: 420px;" src="heading/marina fleet.png" alt="" height="300px">
+  <div class="col-lg-8">
+    <div class="main-about">
+      <img src="heading/about-heading.png" alt="">
+  <p class="about-para">As a world-leader in yacht chartering, brokerage, yacht marketing, yacht management and new builds, our experience, track record and portfolio are unchallenged. This position and our long heritage are a great source of pride, but were prouder still of our people. Every member of our expert team is committed to providing you with the highest quality service that is absolutely transparent and reliable. In the world of yachting, you could have no better qualified or trustworthy partner than Marina Fleet.</p>
+</div>
+</div>
+</div>
+<div style=" margin-top: 300px;">
+  <h1 style="color: rgb(253, 204, 68);" class="text-center  fw-bold display-1 ">Real People. Real Passions.</h1>
+  <hr 
+  style="
+  width: 40%;
+  color:rgb(253, 204, 68) ;
+  height: 2px;
+  margin-left: 400px;
+  ">
+  <h6 style="font-size: 24px;" class=" text-center">As a team that’s grown up, lived, worked or raced on the water, we know yachts like we do the back of our own hands. With specialism in every area, from management to marketing, charter, sales, accounting or destinations, we all bring our own superpower to the table, yet pull together to get the job done. Like a race team, none of us is as awesome as all of us. Add to that an encyclopedic network with the world’s best shipyards and suppliers, and specialist becomes unstoppable.</h6>
+</div>
+<div class="team">
+  <div class="row">
+    <div class="col-lg-4">
+  <img id="team" src="our team.png" alt="">
+</div>
+<div class="col-lg-4">
+  <div class="box-1">
+    <a href="">
+      <img src="boy1-removebg-preview.png" alt="" height="50px">
+    </a>
+    <h4>Shahbaz Kamal</h4>
+    <h6>Commercial Director</h6>
+  </div>
+  <div class="box-1">
+    <a href="">
+      <img src="girl-removebg-preview.png" alt="" height="50px">  
+    </a>
+    <h4>Imama Mushtaq</h4>
+    <h6> Operations Director</h6>
+    </div>
+    <div class="box-1">
+    <a href="">
+    <img style="margin-left: 25px;" src="boy2-removebg-preview.png" alt="" height="50px">
+  </a>
+    <h4>Asad Ali</h4>
+    <h6>Director</h6>
+  </div>
+</div>
+<div class="col-lg-4">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28941.970654346685!2d67.0212157275559!3d24.940710097752472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1698305304361!5m2!1sen!2s" width="92%"  height="50%" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <h6 style="text-align: center;">
+    Address:
+    Karachi,Pakistan
+  </h6>
+  <div class="pdf">
+  <a style="color: white;" href="MARINA-FLEET PDF.pdf" target="_blank">
+    <img src="pdf.png" alt="" height="50px">
+    Chartering Vessels
+    
+  </a>
+</div>
+</div>
+</div>
+</div>
+    <div style="margin-top: 200px; " class="">
+      <footer
+      class="text-center text-lg-start text-dark"
+      style="background-color: rgba(6, 6, 26, 0);"
+      >
+    <!-- Section: Social media -->
+    <section
+         class="d-flex justify-content-between p-4 text-white"
+         style="background-color: rgba(255, 196, 35, 0.836) "
+         >
+    <!-- Left -->
+    <div class="me-5">
+    <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+    
+    <!-- Right -->
+    <div>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-google"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-github"></i>
+    </a>
+    </div>
+    <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+    
+    <!-- Section: Links  -->
+    <section class="">
+    <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 style="font-size: 22px; color: white;" class="text-uppercase fw-bold">Marina Fleet</h6>
+        <img style="margin-top: -10px; margin-left: -15px;" src="white wheel.png" alt="" width="200px" height="200px">
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 style="font-size: 22px;color: white;"  class="text-uppercase fw-bold">Useful links</h6>
+        <p>
+          <a href="charter.html" class="text-dark">Charter</a>
+        </p>
+        
+        <p>
+          <a href="destinations.html" class="text-dark">Destinations</a>
+        </p>
+        <p>
+          <a href="purchase.html" class="text-dark">Purchase</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+    
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6  style="font-size: 22px;color: white;" class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="fas fa-home mr-3"></i> Karachi, Pakistan</p>
+        <p><i class="fas fa-envelope mr-3"></i> imamamushtaq5@gmail.com</p>
+        <p><i class="fas fa-phone mr-3"></i> +92-3112033680</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+    </section>
+    <!-- Section: Links  -->
+    
+    <!-- Copyright -->
+    <div
+     class="text-center p-3"
+     style="background-color: white"
+     >
+    All Rights Reserved! 2023 Copyright  © 
+    
+    
+    </div>
+    <!-- Copyright -->
+    </footer>
+    </div>
+  </div>
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div class="content">
+          <div class="contact-wrap">
+              <div class="contact-in">
+                  <h1>Contact-info</h1>
+                  <h2><i class="fa-solid fa-phone"></i>Phone</h2>
+                  <p>92+3212933678</p>
+                  <h2><i class="fa-solid fa-envelope"></i>E-mail</h2>
+                  <p>Imamamushtaq5@gmail.com</p>
+                  <h2><i class="fa-solid fa-location-dot"></i>Addres</h2>
+                  <p>Karachi, Pakistan</p>
+                  <ul>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                   <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </ul>
+              </div>
+              <div class="contact-in">
+                  <h1>send a Message</h1>
+                  <form action="" onsubmit="return validation()">
+                      <input type="text" placeholder="Full-Name" class="contact-in-input" name="fullname" id="fullname">
+                      <span id="fullnameerror" class="text-danger fw-bold"></span>
+                      <input type="email" placeholder="E-mail" class="contact-in-input" name="email" id="email">
+                      <span id="emailerror" class="text-danger fw-bold"></span>
+                      <input type="password" placeholder="Country" class="contact-in-input" name="password" id="password">
+                      <!-- <input type="password" placeholder="Password" class="contact-in-input" name="Password" id="Password"> -->
+                      <span id="passworderror" class="text-danger fw-bold"></span>
+                      <textarea placeholder="Message" class="contact-in-textarea" name="Message" id="message"></textarea>
+                      <span id="messageerror" class="text-danger fw-bold"></span>
+                      <input type="submit" value="submit" class="contact-in-btn">
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+      
+      </div>
+    
+    </div>
+    <div class="sidebar">
+      <a href="home.html"><img src="white wheel.png" alt="" height="45px" width="45px"> </a>
+      <a  onclick="openNav()" href="#"><img src="contact.png" alt="" height="40px" width="40px"> </a>
+      <a href="https://www.google.com/maps/@24.9406726,67.0418153,14z?entry=ttu" target="_blank"><img src="location.png" alt="" height="40px" width="40px"> </a>
+    </div>
+        </div>
+   </div>
+    </div>
+    <script src="jquery.com_jquery-3.7.1.min.js"></script>
+    <script src= "isotope-layout@3.0.6_dist_isotope.pkgd.min.js"></script>
+    <script src="home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </body>
+    </html>

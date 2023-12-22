@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Fleet</title>
+    <link rel="shortcut icon" href="MAIN ICON.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:rgb(0, 0, 22) ;
+            margin: 0;
+            /* overflow: hidden; */
+        }
+
+        .img_box img {
+            max-width: 100%;
+        }
+        .over{
+          overflow: hidden;
+        }
+       
+        .accordion{
+            margin-left: 100px;
+            margin-right: 100px;
+            /* margin-top: 400px; */
+            /* border: 1px solid rgba(253, 204, 68, 0.897)  ; ; */
+            margin-bottom: 50px;
+        }
+        .accordion-item{
+            background-color:rgba(253, 204, 68, 0.267) ;
+            color: white;
+        }
+        .accordion-button{
+            background-color:rgba(6, 6, 26, 0.219)  ;
+            color: white;
+        }
+        
+        .swiper-button-prev{
+            margin-top:600px ;
+            margin-left: 150px;
+            font-weight: bold;
+
+
+        } 
+        .swiper-button-next{
+            margin-top:600px ;
+            font-weight: bold;
+        }
+        .slider-container{
+            padding: 0px 15px;
+            margin-left: 150px;
+            width: 90%;
+   
+        }
+       .img_box img{
+        height: 300px;
+        width: 520px;
+       }
+       .img_box{
+        height: 800px;
+        width: 300px;
+
+        overflow: hidden;
+        padding: 10px;
+
+       }
+       .img_box h1{
+            margin-top: 300px;
+       }
+       .big{
+        margin: 10px;
+        color: white;
+        
+        position: relative;
+        overflow: hidden;
+       }
+       .big p , .big h1 , .big button{
+        position: absolute;
+
+       }
+       .big h1{
+        margin-top: -400px;
+        font-size: 60px;
+        margin-left: 40px;
+       }
+       .big p {
+        margin-top: -300px;
+        margin-left: 40px;
+        font-size: 18px;
+
+
+       }
+   
+       .big img{
+        width: 100%;
+        opacity: 0.85;
+        position: relative;
+        height: 100%;
+       }
+       .big img:hover{
+        opacity: 0.25;
+        cursor: pointer;
+       }
+       .starter-des{
+        /* margin-left: 200px; */
+        margin-top: 800px;
+        color: rgba(253, 204, 68, 0.911)  ;
+       }
+       #hr{
+        width: 30%;
+        font-size: 30px;
+        height: 10px;
+        font-weight: bolder;
+        color:rgb(253, 204, 68) ;
+        margin-left: 550px;
+       }
+       #explore{
+        width: 100px;
+        padding: 6px; 
+        font-size: 18px;
+        border: none;
+        float: right;
+        margin-left: -60px;
+        margin-top: -750px;
+        position: relative;
+        background-color:rgba(255, 255, 255, 0.644);
+       }
+       #explore:hover{
+        cursor: pointer;
+        background-color: white;
+       }
+       .des-cards img{
+        height: 450px;
+        width: 300px;
+        margin: 20px;
+        opacity: 0.65;
+        margin-left: 100px;
+       }
+       .des-cards img:hover{
+        cursor: pointer;
+        opacity: 0.95;
+
+       }
+       .des-cards{
+        margin-top: -200px;
+       }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="starter">
+        <section class="showcase" >
+            <header>
+                <div class="toggle"></div>
+            </header>
+            <video style="filter: blur(3px);" src="MAIN-BG.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+              <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <button id="btn"><img src="pin.png" alt="" height="90px" width="40px"></button>
+<!-- <button id="button">Enquire</button> -->
+    <div class="topnav" id="myTopnav">
+        <img id="logo" src="MF.png" alt="" width="150px" height="150px">
+        
+        <a href="about.html">About</a>
+        <a href="purchase.html">Purchase</a>
+        <a class="active"  href="destinations.html">Destinations</a>
+        <a href="charter.html">Charter</a>
+        <a href="home.html"> Home </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="over">
+      <img id="main-tag" style="float: right;margin-top: -100px; margin-right: 50px;" src="heading/destination-heading.png" alt="" width="50%" height="50%"> 
+      <div class="starter-des">
+        <p style="margin-left: 700px; color: white;font-size: 20px;">Where to go When</p>
+    <h1 style="margin-left: 100px;" class="text-center display-2 fw-bold">Already Know When You Want to Travel?</h1>
+    <hr id="hr">
+    <p style="font-size: 20px; text-align: center; color: white; margin-left: 100px;">Look no further than our seasonal destination guide. Whether it's the glamour of the French Riviera in May or the solace of a Caribbean island, our charter specialists know a thing or two about finding the perfect destination. Here are our favourite yachting destinations to visit for every season of the year. <p>
+
+      </div>
+    <section class="slider-container">
+            <div class="swiper card_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div style="color: rgb(253, 204, 68); background-color: transparent; margin-top: -80px;" class="img_box">
+                            <h1 class="display-3 text-center fw-bold">Cruising Area</h1>
+                            <h6 style="color: white;" class=" text-center">Discover all destinations</h6>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="https://www.discoverboating.com/sites/default/files/san-francisco.jpg" alt="" >
+          <h2> San Francisco</h2>
+          <span>Blustery winds but fairly calm seas inside San Francisco Bay make this a popular destination for sailors, but power boaters love it too. You can explore the far-flung Bay each weekend for a year and still not cover every cove. </span><br>
+        </div>
+        <a href="purchase.html"><button id="explore">Explore!</button></a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="https://www.discoverboating.com/sites/default/files/mackinac-island.jpg" alt="">
+          <h2> Mackinac Island</h2>
+          <span>Also in the Great Lakes is the scenic island of Mackinac on Lake Huron. Just over four square miles, the island is a summertime draw. Whether you’re up for a kayak tour or a lunch at the yacht club, Mackinac and its history are steeped in maritime culture that won’t disappoint.</span><br>
+        </div>
+        <a href="purchase.html"><button id="explore">Explore!</button></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="https://www.discoverboating.com/sites/default/files/south-florida-boating.jpg" alt="" >
+          <h2>South Florida</h2>
+          <span>Speaking of fishing, the eastern coast of Florida is the hub of center console fishing boats. Whether fishing for tarpon or tuna, the fishing doesn’t get much better from Fort Lauderdale all the way down through the Florida Keys to the Key West.</span><br>
+          
+        </div>
+        <a href="purchase.html"><button id="explore">Explore!</button></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <!-- <img src="SLIDER-4.png" alt="" draggable="false"> -->
+                            <img src="https://www.discoverboating.com/sites/default/files/inline-images/iStock-978149594-Roche-Harbor.jpg" alt="" >
+          <h2>San Juan Island</h2>
+          <span>Only 15 miles from Canada, Roche Harbor is a perfect marina and hotel complex in the Pacific Northwest state of Washington. Stretch your legs by hiking through the nearby San Juan Island Sculpture Park and Nature Reserve. The park features 150 outdoor art pieces created by renowned sculptors and covers 20 acres. </span><br>
+        </div>
+        <a href="purchase.html"><button id="explore">Explore!</button></a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="https://www.discoverboating.com/sites/default/files/florida-keys.jpg" alt="" >
+          <h2>Florida Keys</h2>
+          <span>Variety in paradise” is the best way to describe boating in The Keys. Within this 100-mile-long stretch of islands, you will find world-class offshore and inshore fishing, numerous reefs and wrecks for snorkeling and diving, tropical sandbars, and warm, gin-clear water that’s incredibly inviting. </span><br>
+        </div>
+        <a href="purchase.html"><button id="explore">Explore!</button></a>
+       
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="https://www.discoverboating.com/sites/default/files/jupiter-palm-beach-florida_0.jpg" alt="">
+                            <h2>Palm Beach</h2>
+                            <span>Perhaps the nicest place on the east coast of Florida is the Jupiter/Palm Beach area. This location seems to have the right mix of everything, from amazing offshore and inshore fishing, to crystal clear water and an incredibly close proximity to the Gulf Stream, as well as easy access to the northern Bahamas.</span><br>
+                          </div>
+        <a href="purchase.html"><button id="explore">Explore!</button></a>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    </div>
+    <div class="des-cards">
+      <h1 style="color:rgb(255, 196, 35) ;" class="display-1 text-center fw-bold">Experience yachting in an exceptional Packages.</h1>
+      <hr 
+      style="color:rgb(255, 196, 35); width: 40%; height: 2px; text-align: center; margin-left: 430px;"
+      >
+      <p style="font-size: 24px; color: white;" class="text-center fw-normal">Discover where yacht charter will take you in 20k3. We've rounded up some of the most exciting upcoming summer and winter charter destinations. A year of possibilities awaits and it's yours for the taking.</p>
+      <div class="row">
+        <div class="col-lg-4">
+         <a href="purchase.html"> <img src="destination cards/SLIDER-2.png" alt=""></a>
+          <img  onclick="pin()"  src="pin.png" alt="" style="height: 75px; width: 35px; position: relative; margin-top: -900px; margin-left: 350px;">
+        </div>
+        <div class="col-lg-4">
+          <a href="purchase.html"><img src="destination cards/SLIDER-3.png" alt=""></a>
+          <img  onclick="pin()"  src="pin.png" alt="" style="height: 75px; width: 35px; position: relative; margin-top: -900px; margin-left: 350px;">
+
+        </div>
+        <div class="col-lg-4">
+          <a href="purchase.html"><img src="destination cards/SLIDER-4.png" alt=""></a>
+          <img  onclick="pin()"  src="pin.png" alt="" style="height: 75px; width: 35px; position: relative; margin-top: -900px; margin-left: 350px;">
+
+        </div>
+        <div class="col-lg-4">
+          <a href="purchase.html"><img src="destination cards/SLIDER-5.png" alt=""></a>
+          <img  onclick="pin()"  src="pin.png" alt="" style="height: 75px; width: 35px; position: relative; margin-top: -900px; margin-left: 350px;">
+
+        </div>
+        <div class="col-lg-4">
+          <a href="purchase.html"><img src="destination cards/SLIDER-6.png" alt=""></a>
+          <img  onclick="pin()"  src="pin.png" alt="" style="height: 75px; width: 35px; position: relative; margin-top: -900px; margin-left: 350px;">
+
+        </div>
+        <div class="col-lg-4">
+          <a href="purchase.html"><img src="destination cards/SLIDER-ONE.png" alt=""></a>
+          <img  onclick="pin()"  src="pin.png" alt="" style="height: 75px; width: 35px; position: relative; margin-top: -900px; margin-left: 350px;">
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <h1 style="color: rgba(253, 204, 68, 0.5) ;" class="display-3 text-center fw-bold">FAQs</h1>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  How do I check my vessel arrival?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The easiest and fastest way to track freight shipment is to use online vessel tracking websites or apps. Such tools feature a search function that can communicate a detailed list or display an icon on advanced density maps.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  How long does it take to register a vessel?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A Provisional Certificate of Registry for a vessel may be obtained in one business day, provided that all of the required information and proof of ownership have been received and initial registration fees have been paid. The Provisional Certificate is valid for one year, during which time the owner/operator can obtain the documents required for the Permanent Certificate of Registry.
+
+
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Is there is an age requirements?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Vessels should not be more than 20 years of age at the time of registration; however, vessels older than 20 years may be granted a waiver for registration depending on the vessels condition and whether the vessel meets the requirements of its Classification Society. Applications for vessels 15 years of age or older should be submitted with a Status Report of the vessels statutory survey and certification and a copy of its latest Intermediate or Special Survey Report.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    How can Fleet be created?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">An entity for vessel ownership is easily formed and maintained. More information on business entity formation can be found in our Corporate Services section. Owners may find it advantageous to form more than one entity for a vessel if there is more than one company involved in vessel operations, crewing, cargo handling, and chartering.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    What Kind of boat are eligible for register in the RIM?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Seagoing vessels of any tonnage engaged in foreign trade, including commercial yachts and private yachts 12 meters or more in length, are eligible for registration in the RMI.</div>
+                </div>
+              </div>
+          </div>
+         
+    </div>
+    <div class="container-big-box">
+      <h1 style="color:rgb(253, 204, 68); " class="display-6 text-center fw-bold">You might also be interested in:</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="big">
+            <img onclick ="myAlert()" src="https://images.pexels.com/photos/261414/pexels-photo-261414.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+          <p>View the latest Special offers on the charter market</p>
+          <h1>Special Offers</h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="big">
+          <img onclick ="myAlert()" style="height: 460px;" src="https://images.pexels.com/photos/4934656/pexels-photo-4934656.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+          <p>Whatever adventure look like for you,We can it happenon an expedition yacht </p>
+          <h1>Expedition</h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="big">
+          <img onclick ="myAlert()" src="https://images.pexels.com/photos/8917180/pexels-photo-8917180.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" >
+        <p>A selection of yachts you absolutely cant miss in summers 2k24! </p>
+        <h1>Summers Favourites</h1>
+      </div>
+      </div>
+        <div class="col-lg-6">
+          <div class="big">
+            <img onclick ="myAlert()" src="https://images.pexels.com/photos/5368745/pexels-photo-5368745.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+          <p>Charter inspiration  to appeal to the youngest guests , and the young at heart</p>
+          <h1>Family Yachts</h1>
+        </div>
+        </div>
+      </div>
+      <div style="margin-top: 200px; " class="">
+        <footer
+        class="text-center text-lg-start text-dark"
+        style="background-color: rgba(6, 6, 26, 0);"
+        >
+  <!-- Section: Social media -->
+  <section
+           class="d-flex justify-content-between p-4 text-white"
+           style="background-color: rgba(255, 196, 35, 0.836) "
+           >
+    <!-- Left -->
+    <div class="me-5">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 style="font-size: 22px; color: white;" class="text-uppercase fw-bold">Marina Fleet</h6>
+          <img style="margin-top: -10px; margin-left: -15px;" src="white wheel.png" alt="" width="200px" height="200px">
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 style="font-size: 22px;color: white;"  class="text-uppercase fw-bold">Useful links</h6>
+          <p>
+            <a href="charter.html" class="text-dark">Charter</a>
+          </p>
+          
+          <p>
+            <a href="destinations.html" class="text-dark">Destinations</a>
+          </p>
+          <p>
+            <a href="purchase.html" class="text-dark">Purchase</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6  style="font-size: 22px;color: white;" class="text-uppercase fw-bold">Contact</h6>
+          <p><i class="fas fa-home mr-3"></i> Karachi, Pakistan</p>
+          <p><i class="fas fa-envelope mr-3"></i> imamamushtaq5@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> +92-3112033680</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div
+       class="text-center p-3"
+       style="background-color: white"
+       >
+  All Rights Reserved! 2023 Copyright  © 
+  
+      
+  </div>
+  <!-- Copyright -->
+</footer>
+        <!-- Footer -->
+      </div>
+     
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <div class="content">
+              <div class="contact-wrap">
+                  <div class="contact-in">
+                      <h1>Contact-info</h1>
+                      <h2><i class="fa-solid fa-phone"></i>Phone</h2>
+                      <p>92+3212933678</p>
+                      <h2><i class="fa-solid fa-envelope"></i>E-mail</h2>
+                      <p>Imamamushtaq5@gmail.com</p>
+                      <h2><i class="fa-solid fa-location-dot"></i>Addres</h2>
+                      <p>Karachi, Pakistan</p>
+                      <ul>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                       <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                      </ul>
+                  </div>
+                  <div class="contact-in">
+                      <h1>send a Message</h1>
+                      <form action="" onsubmit="return validation()">
+                          <input type="text" placeholder="Full-Name" class="contact-in-input" name="fullname" id="fullname">
+                          <span id="fullnameerror" class="text-danger fw-bold"></span>
+                          <input type="email" placeholder="E-mail" class="contact-in-input" name="email" id="email">
+                          <span id="emailerror" class="text-danger fw-bold"></span>
+                          <input type="password" placeholder="Country" class="contact-in-input" name="password" id="password">
+                          <!-- <input type="password" placeholder="Password" class="contact-in-input" name="Password" id="Password"> -->
+                          <span id="passworderror" class="text-danger fw-bold"></span>
+                          <textarea placeholder="Message" class="contact-in-textarea" name="Message" id="message"></textarea>
+                          <span id="messageerror" class="text-danger fw-bold"></span>
+                          <input type="submit" value="submit" class="contact-in-btn">
+                      </form>
+                  </div>
+                  
+              </div>
+          </div>
+          
+          </div>
+        
+        </div>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+         
+        </div>
+      
+      </div>
+    </div>
+      <!-- End of .container -->
+                  </div>
+                    </div>
+                     <!-- Load an icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="home.html"><img src="white wheel.png" alt="" height="45px" width="45px"> </a>
+    <a  onclick="openNav()" href="#"><img src="contact.png" alt="" height="40px" width="40px"> </a>
+    <a href="https://www.google.com/maps/@24.9406726,67.0418153,14z?entry=ttu" target="_blank"><img src="location.png" alt="" height="40px" width="40px"> </a>
+
+  
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="home.js"></script>
+    <script>
+      
+      function pin(){
+        Swal.fire({
+  title: 'Image has been pined✅',
+  confirmButtonText: 'OK'
+})
+         
+         }
+       </script>
+         
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    function myAlert() {
+    Swal.fire({
+  title: 'Please Submit the enquire form!',
+  icon: 'error',
+  confirmButtonText: 'OK'
+})}
+    </script>
+</body>
+
+</html>

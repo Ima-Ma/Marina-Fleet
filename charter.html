@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="gallery (1).css">
+       
+    <title>Marina Fleet</title>
+    <link rel="shortcut icon" href="MAIN ICON.png" type="image/x-icon">
+
+</head>
+<body style="background-color:rgb(0, 0, 22) ;">
+    <div class="starter">
+        <section class="showcase" >
+            <header>
+                <div class="toggle"></div>
+            </header>
+            <video  style="filter: blur(3px);" src="MAIN-BG.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+              <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <button id="btn"><img src="pin.png" alt="" height="90px" width="40px"></button>
+    <div class="topnav" id="myTopnav">
+    <img id="logo" src="MF.png" alt="" width="150px" height="150px">    
+    <a href="about.html">About</a>
+      <a href="purchase.html">Purchase</a>
+      <a href="destinations.html">Destinations</a>
+      <a class="active" href="charter.html">Charter</a>
+      <a href="home.html"> Home </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+  </div>
+ 
+    <img id="main-tag" style="float: right; margin-right: 50px;" src="heading/charter-heading.png" alt="" width="50%" height="50%"> 
+    <!-- gallery start -->
+    
+    <div id="ball">
+        <h1 style="color:rgb(253, 204, 68) ;" class="display-1 text-center fw-bold">Achieving the Unbelievable</h1>
+        <hr class="fw-bold mx-auto" style="width: 40%; color:rgb(253, 204, 68) ; height: 2px; ">
+        <p style="color: white;" class=" fw-normal">Access to over 1000 of the best yachts and support from the most experienced charter specialists; Marina Fleet Clients have unparalleled access to the very best yachting has to offer.</p>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="item-menu">
+                    <ul>
+                        <li data-filter="*">All</li>
+                        <li data-filter=".Call-Of-Duty">SAILING</li>
+                        <li data-filter=".Free-Fire">FISHING</li>
+                        <li data-filter=".PUBG">LUXURY</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- luxury-->
+            <div class="item-details">
+               
+                <div class="col-lg-3 PUBG"><img src="aquarius.jpg" alt="" class="img-fluid">
+                <img onclick="pin()"  id="pin" src="pin.png">
+                <h6>In Too Deep</h6> <p>24 <i class="fa-solid fa-person"></i></p>
+
+                </div>
+                <div class="col-lg-3 PUBG"><img src="dream.jpg" alt="" class="img-fluid">
+                  <img onclick="pin()" id="pin" src="pin.png">
+                <h6>Seasick</h6>
+                 <p>33 <i class="fa-solid fa-person"></i></p>
+
+                </div>
+                <div class="col-lg-3 PUBG"><img src="ahpo.jpg" alt="" class="img-fluid">
+                  <img onclick="pin()" id="pin" src="pin.png">
+                  <h6>Riptide</h6> <p>30 <i class="fa-solid fa-person"></i></p>
+                  </div>
+                <div class="col-lg-3 PUBG"><img src="flying fox.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Aquaholic</h6> <p>17 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="project x.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Fin and Tonic</h6> <p>36 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="SHIPS/ship 6.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Sea-battical</h6> <p>40 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="sunrays yacht.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Fantasea</h6> <p>42 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="queen-miri yacht.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Titan</h6> <p>33 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="moonlight-ii yacht.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>The Lady of the Lake</h6> <p>46 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="madsummer yacht.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Contessa</h6> <p>23 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="faith yacht.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Blue Blood</h6> <p>32 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 PUBG"><img src="lauren-l-yacht.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Marquise</h6> <p>34 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <!-- sailing -->
+                <div class="col-lg-3 Call-Of-Duty"><img src="athena.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Unsinkable</h6> <p>6 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="black pearl.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Cthulhu</h6> <p>10 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="catamaran.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Megalodon</h6> <p>5 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="jasali ii.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Aquamarine</h6> <p>12 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="sloop.jpg" alt="" class="img-fluid">
+                    <img onclick="pin()" id="pin" src="pin.png">
+                    <h6>Aquamarine new</h6> <p>16 <i class="fa-solid fa-person"></i></p></div>
+                
+                <div class="col-lg-3 Call-Of-Duty"><img src="silver tip.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Shark Bait</h6> <p>13 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="sea hawk.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Wayfarer</h6> <p>8 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="sea eagle.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Atlantis</h6> <p>6 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="rox star.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Amazonite</h6> <p>9 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="norfolk star.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Liberty</h6> <p>10 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="xasteria sailing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Imagination</h6> <p>11 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Call-Of-Duty"><img src="red-sky sailing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Serendipity</h6> <p>20 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                
+                <!-- fishing -->
+                <div class="col-lg-3 Free-Fire"><img src="yellow tail.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>The Marlin Mistress</h6> <p>20 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="avis angler.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Fisherman’s Luck</h6> <p>32 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="aquastar 33  fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>The Wahoo</h6> <p>21 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="macduff   fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Reel Time</h6> <p>28 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="cygnus gm26  fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Sea Hunter</h6> <p>19 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="cygnus cyfish   fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Sea-cret Weapon</h6> <p>16 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="red bay fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>The Codfather.</h6> <p>20 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="off shore 25 fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Reel Deal</h6> <p>18 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="deborah jane.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Knot On Call.</h6> <p>16 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="napier fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Cotton Voltage</h6> <p>19 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="pro angler 22 fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>The Fishing Experts</h6> <p>20 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+                <div class="col-lg-3 Free-Fire"><img src="halmatic 29 fishing.jpg" alt="" class="img-fluid">
+    <img onclick="pin()" id="pin" src="pin.png">
+    <h6>Professional Poles</h6> <p>14 <i class="fa-solid fa-person"></i></p>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+   <!-- gallery end -->
+   <!-- another info section -->
+    <div class="container-ft-fluid">
+        <h2 id="exp" class=" text-center">Control Your Boat-Buying Experience</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ff">
+                    <h5 class="tt">Buying A Yacht</h5>
+                    <p>Advice on how to buy your yacht,and how a yacht broker can help you 
+                      through the complicated transaction.Once a suitable yacht is found a formal offer is made by the buyer. This is presented by your broker on an industry standard contract to buy the yacht.</p>
+                    <a  href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="ff">
+                    <h5 class="tt">Marine Directory</h5>
+                    <p>The Boating Yellow Pages.Search for a marine business,certified 
+                      brokers,manufacturers and much more. Marina fleet is one of the largest and most diversified cargo handling operator providing multiple supply chain and logistics services in Pakistan,</p>
+                    <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="ff">
+                    <h5 class="tt">Research</h5>
+                    <p>Luxury yachts,superyachts,advice & trends.Tips for beginners,
+                      review of yachts and manufacturers around the world.Marine Environmental Research publishes original research papers on chemical, physical, and biological interactions in the oceans and coastal waters.
+                    </p>
+                    <a  href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="ff">
+                    <h5 class="tt">Search Alerts</h5>
+                    <p>Don't miss out any boat! Save your search and get weekly alerts with
+                      boats that match what you're looking for.Providing global hydrographic and marine geospatial data to support safe, secure and thriving oceans
+                    </p>
+                    <a  href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="ff">
+                    <h5 class="tt">Selling A Yacht</h5>
+                    <p>Advice on how to sell your yacht,and how a yacht broker can help you
+                      through the complicated transaction.excellence in charter, sale & yacht management. For the best superyacht charter experience, book direct with Burgess. Luxury Locations. Book Your 2023 Charter. Crew Services. Superyacht Authority.
+                    </p>
+                    <a  href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="ff">
+                    <h5 class="tt">Marine Services</h5>
+                    <p>YachtWorld offers you the opportunity to receive quotes from a select
+                      group of Finance, Insurance, Warrenty and Transport providers.services that include project management, design, drafting, structural engineering, marine engineering, marine surveying and 3D production lofting.
+                    </p>
+                    <a  href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- another info section end -->
+    <div class="spotlight">
+        <img 
+        style="width: 100%;
+         height: 600px; 
+         opacity: 0.75;
+         filter: blur(3px);
+         "
+         
+         src="beach gif.gif" alt="">
+         <h1>  Charter Spotlight</h1>
+         <hr>
+         <p>From brand new charter Yatch to tried and tasted , here are yacht charter opportunities, we think you shouldnt  miss in winter 2k23</p>
+    </div>
+    <!-- chatereing cards start -->
+    <div class="container-destination">
+        <!-- <h1 style="color: rgb(253, 204, 68);" class="display-5 fw-bold text-center"> You might also be interested in:</h1> -->
+       
+      <div class="container">
+          <!-- 1st -->
+          <div class="row">
+          <div class="col-lg-6 Events ">
+              <img id="card" src="https://media.istockphoto.com/id/1013798416/photo/aerial-view-of-super-yachts-in-harbor-on-the-mediterranean-coast.jpg?b=1&s=612x612&w=0&k=20&c=xVp3vlJHtRNJSrxFXlx0hx8VBmfNq0zsbFIS49WjdSw=" alt="" width="200px">
+              <h5>Oceanic Star</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+
+              <img onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+          </div>
+          <div class="col-lg-6 Meetings">
+              <img id="card" src="https://media.istockphoto.com/id/1324759869/photo/night-view-to-large-illuminated-white-boat-located-over-horizon-colorful-lights-coming-from.jpg?b=1&s=612x612&w=0&k=20&c=HXgFtIlrGZZZdbMrJtdFU5Yu5ddgFUb5yTHJEkX5mxw=" alt=""width="300px">
+              <h5>Yatch Express</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+
+              <img onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <!-- 2nd -->
+          <div class="col-lg-6 Trips">
+              <img id="card" src="https://media.istockphoto.com/id/1021092784/photo/from-the-front.jpg?b=1&s=612x612&w=0&k=20&c=u-_F0lLYgi7Eq4_mEIznqEajKckC_cBimIyip3Kk9ng=" alt="" width="500px">
+              <h5>Marine Services</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <div class="col-lg-6 Parties">
+              <img id="card" src="https://images.pexels.com/photos/1162639/pexels-photo-1162639.png?auto=compress&cs=tinysrgb&w=600" alt=""width="300px">
+              <h5>Pakistan Maritime</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <!-- 3rd -->
+         
+          <!-- 4th -->
+          <div class="col-lg-6 Trips">
+              <img id="card" src="https://images.pexels.com/photos/382167/pexels-photo-382167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="300px">
+              <h5>The Sailors</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <div class="col-lg-6 Events">
+              <img id="card" src="https://images.pexels.com/photos/1377388/pexels-photo-1377388.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""width="300px">
+              <h5>Boating Services</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <!-- 5th -->
+          <div class="col-lg-6 Parties ">
+              <img  onclick="pin()"  id="card" src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="300px">
+              <h5>The Sailors</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <div class="col-lg-6 Events">
+              <img id="card" src="https://images.pexels.com/photos/635534/pexels-photo-635534.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""width="300px">
+              <h5>luxury Boats</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <!-- 6th -->
+          <div class="col-lg-6 Parties">
+              <img id="card" src="https://images.pexels.com/photos/1481262/pexels-photo-1481262.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="300px">
+              <h5>boating Group</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <div class="col-lg-6 Trips">
+              <img id="card" src="https://images.pexels.com/photos/1223648/pexels-photo-1223648.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""width="300px">
+              <h5>Sailors</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <!-- 7th -->
+  
+          <div class="col-lg-6 Meetings">
+              <img id="card" src="https://images.pexels.com/photos/18307125/pexels-photo-18307125/free-photo-of-nyhavn-copenhagen.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height="270px" width="300px">
+              <h5>Marine Services</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left: 500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+          <div class="col-lg-6 Events">
+              <img id="card" src="https://images.pexels.com/photos/16889167/pexels-photo-16889167/free-photo-of-cloudy-beach-day.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height="270px" width="300px">
+              <h5>Yatch Express</h5>
+              <a href="purchase.html"><button id="btn-des">Explore!</button></a>
+              <img  onclick="pin()"  style="width: 30px; height: 65px; margin-left:500px;margin-top: -80px;" src="pin.png" alt="">
+
+          </div>
+      </div>
+    </div>
+  </div>
+    <!-- chartering cards end -->
+     <!-- Load an icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div class="content">
+          <div class="contact-wrap">
+              <div class="contact-in">
+                  <h1>Contact-info</h1>
+                  <h2><i class="fa-solid fa-phone"></i>Phone</h2>
+                  <p>92+3212933678</p>
+                  <h2><i class="fa-solid fa-envelope"></i>E-mail</h2>
+                  <p>Imamamushtaq5@gmail.com</p>
+                  <h2><i class="fa-solid fa-location-dot"></i>Addres</h2>
+                  <p>Karachi, Pakistan</p>
+                  <ul>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                   <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </ul>
+              </div>
+              <div class="contact-in">
+                  <h1>send a Message</h1>
+                  <form action="" onsubmit="return validation()">
+                      <input type="text" placeholder="Full-Name" class="contact-in-input" name="fullname" id="fullname">
+                      <span id="fullnameerror" class="text-danger fw-bold"></span>
+                      <input type="email" placeholder="E-mail" class="contact-in-input" name="email" id="email">
+                      <span id="emailerror" class="text-danger fw-bold"></span>
+                      <input type="password" placeholder="Country" class="contact-in-input" name="password" id="password">
+                      <!-- <input type="password" placeholder="Password" class="contact-in-input" name="Password" id="Password"> -->
+                      <span id="passworderror" class="text-danger fw-bold"></span>
+                      <textarea placeholder="Message" class="contact-in-textarea" name="Message" id="message"></textarea>
+                      <span id="messageerror" class="text-danger fw-bold"></span>
+                      <input type="submit" value="submit" class="contact-in-btn">
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+      
+      </div>
+    
+    </div>
+  <!-- footer start -->
+  <footer
+  class="text-center text-lg-start text-dark"
+  style="background-color: rgba(6, 6, 26, 0);"
+  >
+<!-- Section: Social media -->
+<section
+     class="d-flex justify-content-between p-4 text-white"
+     style="background-color: rgba(255, 196, 35, 0.836) "
+     >
+<!-- Left -->
+<div class="me-5">
+<span>Get connected with us on social networks:</span>
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div>
+<a href="" class="text-white me-4">
+  <i class="fab fa-facebook-f"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-twitter"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-google"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-linkedin"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 style="font-size: 22px; color: white;" class="text-uppercase fw-bold">Marina Fleet</h6>
+    <img style="margin-top: -10px; margin-left: -15px;" src="white wheel.png" alt="" width="200px" height="200px">
+  </div>
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 style="font-size: 22px;color: white;"  class="text-uppercase fw-bold">Useful links</h6>
+    <p>
+      <a href="charter.html" class="text-dark">Charter</a>
+    </p>
+    
+    <p>
+      <a href="destinations.html" class="text-dark">Destinations</a>
+    </p>
+    <p>
+      <a href="purchase.html" class="text-dark">Purchase</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6  style="font-size: 22px;color: white;" class="text-uppercase fw-bold">Contact</h6>
+    <p><i class="fas fa-home mr-3"></i> Karachi, Pakistan</p>
+    <p><i class="fas fa-envelope mr-3"></i> imamamushtaq5@gmail.com</p>
+    <p><i class="fas fa-phone mr-3"></i> +92-3112033680</p>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+ class="text-center p-3"
+ style="background-color: white"
+ >
+All Rights Reserved! 2023 Copyright  © 
+
+
+</div>
+<!-- Copyright -->
+</footer>
+    </div>
+        <!-- footer end -->
+        <!-- side bar -->
+        <div class="sidebar">
+          <a href="home.html"><img src="white wheel.png" alt="" height="45px" width="45px"> </a>
+          <a  onclick="openNav()" href="#"><img src="contact.png" alt="" height="40px" width="40px"> </a>
+          <a href="https://www.google.com/maps/@24.9406726,67.0418153,14z?entry=ttu" target="_blank"><img src="location.png" alt="" height="40px" width="40px"> </a>
+        </div>
+        <!-- sidebar end -->
+    <script src="jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="isotope-layout@3.0.6_dist_isotope.pkgd.min.js"></script>
+    <script src="home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      
+      function pin(){
+        Swal.fire({
+  title: 'Image has been pined✅',
+  confirmButtonText: 'OK'
+})
+         
+         }
+       </script>
+</body>
+</html>
+
+

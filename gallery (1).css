@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.item-menu{
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.item-menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 14px;
+    font-weight: 500;
+    color: white;
+    margin-right: 100px;
+    font-size: 24px;
+}
+.item-menu ul li:hover{
+    background-color: white;
+    color: rgb(0, 0, 22);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.item-menu ul li.active{
+    background-color: white;
+    color: rgb(0, 0, 22);
+
+   
+}
+.item-details h6{
+    margin-left: 32%;
+}
+.item-details p{
+    float: right;
+    margin-right: -80px;
+    margin-top: -25px;
+}
+.item-details{
+    margin-left: 60px;
+}
+.spotlight h1{
+    color:rgb(253, 204, 68)  ;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 800;
+    margin-top: -500px;
+    font-size: 82px;
+    margin-left: 250px;
+    position: relative;
+    margin-bottom: 500px;
+}
+.spotlight p{
+    color: white;
+    margin-top: -500px;
+    margin-left: 250px;
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 300px;
+
+}
+.spotlight hr{
+    width: 40%;
+    color:rgb(253, 204, 68) ;
+    height: 2px;
+    font-weight: 900;
+    font-weight: 800;
+    margin-top: -450px;
+    margin-left: 300px;
+    position: relative;
+    margin-bottom: 500px;
+
+}
+.item-details img{
+    margin-left: 100px;
+    padding-left: 30px;
+    height: 250px;
+    width: 100%;
+    padding: 5px;
+    /* position: absolute; */
+    
+}
+.item-details img:hover{
+    opacity: 0.55;
+}
+
+#ball{
+    margin-left: 120px;
+    background-color: rgb(0, 0, 22);
+    overflow: hidden;
+    margin: 20px;
+    margin-top: 700px;
+}
+
+#exp{
+    font-weight: 900;
+    color: rgb(253, 204, 68) ;
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+.tt{
+    padding-bottom: 10px;
+    color: rgb(253, 204, 68) ;
+}
+
+.container-ft-fluid{
+    padding-bottom: 100px;
+    background-color: rgb(0, 0, 22);
+    color: white;
+    margin: 20px;
+
+}
+.ff a{
+    color: rgba(253, 204, 68, 0.438) ;
+}
+#pin{
+    position: relative;
+    height: 80px;
+    width: 40px;
+    /* float: right; */
+    margin-top: -470px;
+    /* margin-left: 400px; */
+    /* margin-right: -85px; */
+}
+#pin:hover{
+    cursor: pointer;
+}
